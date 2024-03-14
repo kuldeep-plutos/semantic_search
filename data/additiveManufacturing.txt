@@ -1,0 +1,415 @@
+IOP Conference Series: Materials
+Science and Engineering
+     
+PAPER • OPEN ACCESS
+Parametric multi-objective optimization of fused
+deposition modelling (FDM) with biopolymer using
+Grey-Taguchi method
+To cite this article: Kuldeep Sharma and Kapil Kumar 2022 IOP Conf. Ser.: Mater. Sci. Eng. 1248
+012107
+ 
+View the article online for updates and enhancements.
+You may also like
+Optimization of TIG welding process
+parameters on 304 austenitic stainless
+steel sheet metal using fuzzy logic based
+Taguchi method
+Demeyesus Gizaw Abebe and Teshome
+Mulatie Bogale
+-
+Mechanical and abrasive wear behavior of
+cenosphere filled carbon reinforced epoxy
+composites using Taguchi-Grey relational
+analysis
+S M Vinu kumar, B Suresha, G
+Rajamurugan et al.
+-
+Optimization of Ni–Mo/Al composite
+coating parameters using Taguchi method
+R Mousavi, M Esmailzadeh, M E
+Bahrololoom et al.
+-
+This content was downloaded from IP address 115.245.194.106 on 14/03/2024 at 11:34
+Content from this work may be used under the terms of the Creative Commons Attribution 3.0 licence. Any further distribution
+of this work must maintain attribution to the author(s) and the title of the work, journal citation and DOI.
+Published under licence by IOP Publishing LtdInternational Conference on Materials Science and Engineering (ICMSE 2022)
+IOP Conf. Series: Materials Science and Engineering 1248  (2022) 012107
+IOP Publishing
+doi:10.1088/1757-899X/1248/1/012107
+1
+Parametric  multi-objective  optimization  of  fused  deposition 
+modelling (FDM) with biopolymer using Grey-Taguchi 
+method 
+Kuldeep Sharma1,2, Kapil Kumar1,3 
+1 Department of Mechanical Engineering, Greater Noida Institute of Technology, 
+Greater Noida, Gautam Buddha Nagar- 201310, UP, India 
+2 E-mail: kldpsh7@gmail.com 
+3 E-mail: kapil.me@gniot.net.in, er.kapil.kr@gmail.com  
+Abstract. For ecological sustainability, the synthetic polymers are being continuously replaced 
+by biopolymers due to their unique properties of biocompatibility and  biodegradability. Ploy-
+lactic  acid  (PLA)  is  a  well-known  engineering  biopolymer  because  of  its  versatile  use  in 
+bioengineering, textile and packing industries. For the customized engineering applications, the 
+mechanical properties, namely tensile strength and shore hardness of PLA specimens printed by 
+FDM  which  is  an  economical  3D  printed  technique  has  been  investigated  in  this  article. 
+Taguchi’s L9 orthogonal array (OA) is used as a design of experiment. The influence of process 
+parameters namely layer height, nozzle temperature, raster angle and surrounding pressure on 
+mechanical properties of 3D printed specimens has been analysed by using Analysis of variance 
+(ANOVA).  ANOVA  is  employed  to  identify  the  significance  and  percent  contribution  of  a 
+particular process parameter on each mechanical property separately. In the end, grey relational 
+analysis (GRA) is used as a multi-objective optimization tool to fabricate a better specimen with 
+comprehensive mechanical properties.  
+Keywords:  3-D printing, Fused deposition modelling, Mechanical properties, Taguchi method, 
+Grey relational analysis 
+1. Introduction. 
+Over the past few years, Additive Manufacturing or 3D printing has gained great popularity by 
+virtue of its ability to fabricate complex shapes with ease, size availability, easy handling, wide range 
+of functional materials and its applications in engineering industry especially in aeronautics, 
+construction,  automotive  industry,  textile  industry, food  industry  and  medical  sciences  Espalin et  al. 
+[1]. Additive manufacturing has a number of methods which are being used as per their properties, some 
+of these methods are stereolithography, selective layer sintering,  syringe extrusion, Fused Deposition 
+Modelling  (also  known  as  Fused  Filament  Fabrication)  etc.  But  FDM  has  become  extensively 
+implemented  technique  of  3D  printing  among  other  methods  Prashantha  and  Roger  [2].  In  FDM 
+method, a heated printing head unit extrudes semi-liquid thermoplastic through a fixed orifice nozzle 
+on a build area (printer bed) one layer upon other in order to form a 3-dimensional shape Alafaghani et 
+al [3].  
+ 
+Figure 1 Diagrammatic representation of FDM Process 
+International Conference on Materials Science and Engineering (ICMSE 2022)
+IOP Conf. Series: Materials Science and Engineering 1248  (2022) 012107
+IOP Publishing
+doi:10.1088/1757-899X/1248/1/012107
+2
+The relative motion between printing head and print bed in all three dimensions is governed by 
+a software of computer aided manufacturing (Zein et al., 2002). Basics of a FDM 3D printer are shown 
+in Figure 1(Sharma et al., 2021). 
+Optimization of FDM process parameters has been a field of interest for researchers over  the 
+last few years and studies have been performed to understand effects of different process parameters on 
+different  characteristics  of 3D  printed  parts.  Through optimization  of  process  parameters,  a  range  of 
+settings  can be  defined for a  FDM  3D printer  where  upon the  strength, printing time,  material used, 
+dimensional accuracy or any other aspect of fabricated part can be optimized. Raster angle, layer height, 
+line width, bed temperature and nozzle temperature are some of the most commonly optimized process 
+parameters  [4–7].  Conventionally,  researchers  vary  one  process  parameter  while  keeping  others 
+constant to study its effects and then next parameter. While this technique is proven to work but it is 
+very time and resource consuming as number of experiments grow exponentially when more than one 
+parameter is optimized and intersection terms of different parameters are not taken into consideration. 
+To overcome this, Taguchi method is used in this  experimental study which is an efficient design of 
+experiment method to screen a number of control parameters while keeping the number of experiments 
+significantly low [8]. L9 orthogonal array of Taguchi’s method is used to study the effects of different 
+process parameters on tensile strength and shore hardness of specimens. Subsequently, ANOVA is used 
+to determine optimum process parameters with their effective contribution.  
+2. Literature Review 
+ (Srivastava et al. [4] Conducted a Response surface methodology (RSM) on FDM Maxum, 3D 
+printer  using  ABS  thermoplastic  polymer.  Here,  a  hybrid  approach  was  proposed  to  optimize  the 
+material volume of model along with built time through FDM by establishing optimal conditions as per 
+grey analysis method with 0.654 mm contour width and 0.0254 mm air gap, orientated at 0.0° with 0º 
+raster  angle.  Prashantha  and  Roger  [2]  printed  specimens  for  the  fabrication  of  conductive  polymer 
+Nano  composites using FDM  based  3D printer. Parameters  set as nozzle temperature 210°  C  and its 
+diameter, 0.4 mm. During printing, bed temperature was set at 60º C, while distance between the nozzle 
+and bed was set at 0.2 mm. Printed specimens were of two surface layer shells stacked in between 45° 
+and  -45º  at  0.2  mm  layer  height.  The  infill  density  was  chosen  100  percent  along  with  linear  infill 
+pattern. Panda et al.[5] adopted a recently developed Bacterial foraging optimization algorithm due to 
+its ease of implementation. By using surface method for prediction process, a functional relationship 
+was developed between strength and process parameters like thickness, raster width, raster angle, build 
+orientation and air gap. Hmeidat et al. [6] printed Nano composites using EPON 826 resin and DGEBPA 
+resin having 178-186 weight per epoxide with density of 1.162 g/cc. The designed thermoset composite 
+products  found  to  have  significant  higher  strength  range  of  80  to  143  MPa  because  of  cross-linked 
+process,  resulted in excellent layer  to  layer  bonding.  Papon and  Haque  [7]  used  a  laboratory mixing 
+extruder  to  develop  small batches  of  polymers  of  Poly  lactic  acid  biopolymers  (PLA)  and  Cellulose 
+Nano fibril (CNF) filaments. PLA granulates of 3 mm were selected as matrix material that was melted 
+at 175° C while, CNF with 400 nm length & average diameter of 50 nm used as reinforcement material. 
+In  their  study,  it  was  concluded  that  CNF/PLA  Nano  composites  with  0.5  percent  CNF  results  in 
+improved strength and modulus elasticity set against neat PLA. Extruder orifice and printer nozzle also 
+affects  the  geometry  of  bed  spreading  and  orientation  of  CNF.  Cataldi  et  al.  [9]  produced  Nano 
+composites  of  polyvinyl  alcohol  and  cellulose  Nano  crystals  using  a  single  screw  extruder.  In  the 
+produced specimens PVOH was used as matrix material. It was found that, by introducing CNC  into 
+the  composited  stiffness  of  filament  increased  which  resulted  in  tougher  and  less  dense  products. 
+Alafaghani et al. [3] studied the effect of different control parameters on dimensional accuracy along 
+with their  mechanical properties. In the  study, it was concluded that  the dimensional accuracy  along 
+with  their  mechanical  properties of  the 3D  printed  material  were affected  more by  extrusion 
+temperature, building direction and height of layer than the printing speed, infill pattern and percentage. 
+B. Coppola et al. [10] did the comparative study of specimens of PLA and PLA/CLAY Nano composites 
+at varying temperatures using FDM technique. In the study, semi-crystalline PLA was used as matrix 
+and dog bone specimens were printed to mechanically test the samples at different temperatures: 185º 
+C,  200º  C  and  215º  C.  It  was  concluded  that  Nano  composite  samples  exhibit  higher  modulus  of 
+elasticity than the PLA specimens which increases with increasing printing temperature. Ceretti et al. 
+International Conference on Materials Science and Engineering (ICMSE 2022)
+IOP Conf. Series: Materials Science and Engineering 1248  (2022) 012107
+IOP Publishing
+doi:10.1088/1757-899X/1248/1/012107
+3
+[11]  studied  the  effect  of  extrusion  technology  and  process  parameters  on  the  deposited  material  by 
+producing multi-layered Poly-caprolactone (PCL) scaffolds varying configurations and adding human 
+foreskin fibroblast cells at cellular density of 4000 cells/cm.  Though, any significant effect of extrusion 
+head  on  the  geometry  of  samples  was  not  found  but  grain  extrusion  head  suggest  to  be  preferred. 
+Bartolomeo Coppola et al. [12] studied the relation between printing temperature and the thermoplastic 
+polymer architecture used in additive manufacturing technology. They produced the specimens of PLA 
+reinforced  layer-wise  with  silicate  using  single  screw  extruder  at  10rpm  with  operating  temperature 
+varied in the range of 160º C - 180° C. They fixed the nozzle diameter 0.35 mm, bed temperature at 50º 
+C along with layer height 0.2 mm and raster angle at +/-45° C. From the study it was concluded that, 
+transparency of a specimen is directly affected by printing temperature, as it increases with increases in 
+temperature. (Balchan and Drickamer [13] studied the effects of pressure on the resistance of selenium 
+and iodine in the specimens. They experimented in the pressure range of 60 to over 400 kbar and found 
+a  sharp  drop  in  the  resistance  between  60  to  128  kbar  for  selenium  and  60  to  255  kbar  for  Iodine. 
+Sobczak et al. [14] observed the influence of pressure in metal castings. Parameters such as nucleation 
+growth, interfacial energy, phase diagrams and diffusion coefficient were considered. It was concluded 
+that reduced critical radius, decreased interfacial free energy and reduced rate of new phase nucleation 
+resulted  in refinement structure  formation.  Dean and Unal  [8]  notified  the  benefits  of using  Taguchi 
+technique in the specimen’s production and stated that Taguchi method is a powerful tool to produce 
+products with robust quality and improved cost efficiency, simultaneously. Mohan Pandey et al. [15] 
+explained layered manufacturing into two categories. The slicing algorithms employed in the process 
+have  been  classified  into  rectangular  build  edge  and  slope.  Ahn  et  al.  [16]  presented  formulation  of 
+surface roughness in the specimens produced by FDM technique. They concluded that cross-section of 
+filament, surface angle, thickness of layer  influences the surface roughness of fabricated FDM parts. 
+Boschetto and Bottini [17] performed a case study with 60 different deposition angles taken in the range 
+0° to180֯ using a thermoplastic polymer, ABS and prepared a method to predict surface roughness and 
+dimensional  accuracy.  After  investigation,  they  concluded  that  the  process  parameters  like  layer 
+thickness and deposition angle greatly influence the dimensional deviations. Bellini et al. [18] evolved 
+a new extrusion method by using granules rather than filament in the field of fused deposition modelling 
+of ceramics to overcome the limitations of filaments being used. Pandey et al. [19] evaluated surface 
+roughness of FDM part which majorly caused due to staircase effect. They presented a semi empirical 
+model  and  used  HCM  (Hot  cutter  machine).  ANOVA  was  used  to  evaluate  the  significant  index  of 
+process and concluded that, by using HCM method, 0.3 μm level of surface finish has been achieved 
+with 87% confidence level.  
+The intensive literature review indicates that in order to optimize mechanical properties of 3D 
+printed parts through FDM process, usually the process parameters which are controlled through FDM 
+machine  itself  are  optimized  and  external  conditions  such  as  surrounding  temperature,  surrounding 
+pressure,  humidity  etc.  are  not  taken  into  account.  The  quality  characteristics  of  3D  printed  parts  is 
+affected by the external factors, physicist P.W. Bridgman [20] conducted a thorough study on properties 
+and characteristics of materials under high pressure. J.D. Bernal [21] stated that under sufficiently high 
+pressure, all matter should behave like metals. In this study one of these factors, surrounding pressure 
+is taken under consideration for optimization and treated as a process parameter. Taguchi technique and 
+GRA together are proven as a  great tool for the purpose of multi-objective optimization as so that is 
+why these analysis methods are employed as well.  
+3. Experimentation 
+3.1 Process parameters and their range 
+After  intensive  literature  review,  the  process  parameters  like  layer  height,  raster  angle  and 
+nozzle temperature have been greatly influenced the mechanical properties of 3D printed specimens. In 
+this research study, a new process parameter, i.e., surrounding pressure is taken under consideration in 
+order  to  understand  its  influence  on  the  mechanical  properties  such  as  tensile  strength  and  shore 
+hardness of FDM 3D printed specimens. To perform experimentation, L9 orthogonal array of Taguchi’s 
+design of experiment have employed in which each process parameter considered at three levels. These 
+three levels are selected based on 3D printer manual and pilot test performed on a 3D printer. The ranges 
+International Conference on Materials Science and Engineering (ICMSE 2022)
+IOP Conf. Series: Materials Science and Engineering 1248  (2022) 012107
+IOP Publishing
+doi:10.1088/1757-899X/1248/1/012107
+4
+and subsequent levels of variable process parameters taken for this study are as shown in Table  1. In 
+3D printing of specimens, some process parameters of FDM 3D printer have taken fixed during each 
+experiment, which are as follows: bed temperature at 60° C, 0.4 mm nozzle diameter, relative density 
+at 100%, printing speed at 3600 mm/min, three number of solid layers and 0.4 mm extrusion width. 
+Table 1: Levels and range of process parameters 
+Control Factors Symbols Units Levels 
+I II III 
+Layer Height A mm 0.1 0.15 0.2 
+Raster Angle B Degree 0 45 90 
+Nozzle Temperature C º C 200 210 220 
+Surrounding Pressure D psi 0 50 100 
+ 
+3.2 Materials 
+The polylactic acid (PLA) filament, white colour, of diameter 1.75 ± 0.03 mm was selected to 
+print the test specimens for analysing the mechanical properties. PLA, a thermoplastic polyester, is one 
+of the most commonly used 3D printing filaments and its chemical formula is (C3H4O2)n.  
+3.3 Experimental Setup 
+FDM machine used for sample preparation is Inferno i3 3D printer. Maximum print volume for 
+this  particular  model  is  220*220*250  mm.  ABS  (Acrylonitrile  butadiene  styrene),  PVA  (Polyvinyl 
+Alcohol), PLA (Polylactic Acid), high density polyethylene and similar materials can be used to print 
+by this  3D printer.  A print bed  that can be  heated is installed in this printer which is very helpful to 
+adhere  the  bottom  layer  of  the  specimen.  Firmware  used  in  this  machine  is  Marlin.  To  print  on  this 
+machine G-code of the part is send to the printer with a SD card or over USB. The FDM printer is kept 
+inside the air-tight pressure chamber and the lid of the chamber is shut closed with the help of fasteners, 
+the air compressor is turned on to increase the air pressure around FDM printer, the compressed air is 
+first filled in the cylinder of compressor and then transferred to the pressure chamber containing FDM 
+machine with the help of a high-pressure pipe.  
+ Figure 2: Experimental Setup 
+International Conference on Materials Science and Engineering (ICMSE 2022)
+IOP Conf. Series: Materials Science and Engineering 1248  (2022) 012107
+IOP Publishing
+doi:10.1088/1757-899X/1248/1/012107
+5
+Desired pressure is set in the pressure switch which automatically turns the compressor off 
+once that pressure is achieved. After maintaining required surrounding pressure, FDM process starts, 
+the test specimen is printed and pressure is released, then specimen is taken out and whole process is 
+repeated to print next specimen. Thus, a pressure chamber along with an air compressor is used to 
+control and change surrounding pressure as per the requirement, the printer is kept inside pressure 
+chamber. All other process parameters are set while creating the G-code file and sent to the printer 
+along with the G-code. The experimental setup used in this study is displayed in Figure 2 [22]. 
+ 
+3.4 Sample Preparation 
+In this study, ISO 527-2 (Model 5A) standard is used for testing of tensile properties of PLA 
+[23]. Figure 3 [22] shows shape and dimensions in mm used to prepare CAD 3D model for samples. 
+Samples are 3D printed using PLA on Inferno i3 FDM 3D printer.  
+Figure 3: CAD model of tensile specimen 
+To  understand  the  effects  of  process  parameter  variation  on  tensile  strength  of  FDM  produced 
+specimens,  the  specimens  were  fabricated  as  per  ISO  527-2  standard  and  tested  on  Tax-care  digital 
+tensile  testing  machine.  Shore  hardness  of  specimens  was  also  measured  using  a  shore  durometer. 
+Figure 4 shows fractured specimen after tensile testing.  
+Figure 4: Fractured samples after tensile test 
+3.5 Experimental design using Taguchi technique 
+Taguchi method is an efficient technique to design experiments for a process with multiple variables in 
+order  to  upgrade  the  product  quality  when  experimenter  ought  to  keep  number  of  experiments 
+significantly low[24]. Taguchi method is used in this study to evaluate the effects of control factors of 
+FDM process on the mechanical properties of FDM printed specimens. 
+In  Taguchi  methodology,  quality  of  a  product  is  realized  as  an  estimation  of  loss  to  the  society 
+interconnected  with  that  product.  Here,  loss  can  be  defined  as  deviations  and  variations  found  in 
+function of the product. A comparison of how much each unit differs from other in the way it operates 
+shows loss from variation in function, greater variance means more significant loss. This study focuses 
+International Conference on Materials Science and Engineering (ICMSE 2022)
+IOP Conf. Series: Materials Science and Engineering 1248  (2022) 012107
+IOP Publishing
+doi:10.1088/1757-899X/1248/1/012107
+6
+on strength of specimens which is desired as high as possible, so “higher the better” method of quality 
+characteristics is preferred for the responses. Equation (1) shows the formula used to calculate S/N ratio. 
+Table 2 shows response values for shore hardness and tensile strength by using Taguchi’s L9 orthogonal 
+array. 
+𝑆 𝑁⁄ 𝑟𝑎𝑡𝑖𝑜 =−10log(1
+𝑛∑ 1
+𝑦𝑗2
+𝑛
+𝑖=1
+)                        (1) 
+Where, 𝑦𝑗 = response for performance characteristics 
+  n = Number of repetitions 
+Table 2: Response values for tensile strength and shore hardness using L9 orthogonal array 
+          
+Tensile Strength 
+(MPa)   
+Shore Hardness 
+(BHN)   
+S. No. A B C D 
+Trial 
+1 
+Trial 
+2 
+Trial 
+3 
+S/N ratio 
+(dB) 
+Trial 
+1 
+Trial 
+2 
+Trial 
+3 
+S/N ratio 
+(dB) 
+1 1 1 1 1 59.32 63.3 68.28 36.03 91 93 96 39.39 
+2 1 2 2 2 72.96 76.94 81.92 37.73 92 94 97 39.49 
+3 1 3 3 3 62.85 66.83 71.81 36.50 91 92 95 39.33 
+4 2 1 2 3 58.79 62.77 67.75 35.96 93 94 97 39.52 
+5 2 2 3 1 54.38 58.36 63.34 35.32 93 95 98 39.58 
+6 2 3 1 2 60.2 64.18 69.16 36.15 93 95 98 39.58 
+7 3 1 3 2 47.98 51.96 56.94 34.31 92 94 97 39.49 
+8 3 2 1 3 55.67 59.65 64.63 35.51 94 96 99 39.67 
+9 3 3 2 1 67.05 71.03 76.01 37.04 93 95 98 39.58 
+ 
+4. Results and Discussion  
+Figure 5 shows the effects of control factors on desired mechanical properties namely, tensile strength 
+and shore hardness of FDM produced specimens, a graph is plotted between mean of S/N ratios of each 
+parameter at different levels and as our approach here is “higher the better”, parameters at level A1, B3, 
+C2 and D1 are best suitable in order to achieve maximum tensile strength. In a similar fashion, parameter 
+A3, B2, C1 and D2 forms best setting which ensures maximum shore hardness.   
+ 
+Figure 5: Influence of control factors on tensile strength and shore hardness 
+International Conference on Materials Science and Engineering (ICMSE 2022)
+IOP Conf. Series: Materials Science and Engineering 1248  (2022) 012107
+IOP Publishing
+doi:10.1088/1757-899X/1248/1/012107
+7
+Analysis  of  variance  (ANOVA)  is  performed  in  order  to  understand  significance  of  each  process 
+parameter on tensile strength and shore hardness of final part respectively. Table 3 reveals that nozzle 
+temperature (Factor C) is the highest significant control factor which affects tensile strength of FDM 
+produced part with 45.74% contribution followed by layer height (Factor A) which contributes 27.86%, 
+raster angle (Factor B) has 24.95% contribution while surrounding pressure (Factor D) turns out to be 
+an insignificant factor for tensile strength within the range considered in this study. 
+Table 3: Pooled ANOVA for Tensile Strength 
+Factors DOF Sum of Square Variance F-ratio P (%) 
+A 2 2.2253 1.1127 78.00 27.86 
+B 2 1.9964 0.9982 69.98 24.95 
+C 2 3.6360 1.8180 127.45 45.74 
+Error 2 0.0285 0.0143   1.45 
+Total 8 7.8862     100 
+𝐹0.05(2,2)=19 (𝑇𝑎𝑏𝑢𝑙𝑎𝑡𝑒𝑑), DOF-Degree of Freedom, P (%)- percentage contribution 
+Table 4: Pooled ANOVA for Shore Hardness 
+Factors DOF Sum of Square Variance F-ratio P (%) 
+A 2 0.05410 0.02705 286.54 63.51 
+B 2 0.01993 0.00996 105.54 23.25 
+C 2 0.01074 0.00537 56.89 12.43 
+Error 2 0.00019 0.00009   0.81 
+Total 8 0.08490     100 
+𝐹0.05(2,2)=19 (𝑇𝑎𝑏𝑢𝑙𝑎𝑡𝑒𝑑), DOF-Degree of Freedom, P (%)- percentage contribution 
+Table 4 indicates percentage contribution of factors A, B and C in affecting the shore hardness of final 
+part. Layer height (Factor A) proved to be the highest significant parameter having a contribution share 
+of 63.51% followed by raster angle (Factor B) and nozzle temperature (Factor C) with a contribution of 
+23.25% and 12.43% respectively while surrounding pressure (Factor D) is an insignificant factor here 
+as well. 
+4.1 Grey Relational Analysis 
+Grey  relational  analysis  (GRA)  is  used  in  this  study  as  a  method  of  multi-objective  optimization. 
+Multiple attributes of a  decision making problem are consolidated into a  single value in this method 
+[25].  The data obtained from Taguchi’s method is processed into grey relational coefficient and then 
+subsequently processed into grey relational grade (GRG), GRG is an index which deals with multiple 
+performance characteristics. The data received from S/N ratio of tensile strength and shore hardness is 
+processed  into  linear  normalization,  original  sequence  is  converted  between  0.00  and  1.00  for  the 
+purpose of comparison, it is known as grey relational generating. Equation (2) is used for normalization 
+of original data. For a multi-objective optimization, it is observed that highest performance is indicated 
+by highest GRG [26]. 
+𝑥𝑖∗(𝑡)= 𝑥𝑖𝑜(𝑡)−𝑚𝑖𝑛 𝑥𝑖𝑜(𝑡)
+𝑚𝑎𝑥 𝑥𝑖𝑜(𝑡)−𝑚𝑖𝑛 𝑥𝑖𝑜(𝑡)                      (2) 
+Where, 𝑥𝑖∗(𝑡) represents normalized value of tth response within ith experiment, 𝑥𝑖𝑜(𝑡) represents original 
+sequence value of tth response within ith experiment, min𝑥𝑖𝑜 (𝑡) and max𝑥𝑖𝑜(𝑡) represents lowest and 
+highest values of 𝑥𝑖𝑜(𝑡) respectively. Equation (3) is used to calculate grey relational coefficient which 
+is then used to establish a correlation between best value and experimental value.  
+ 
+International Conference on Materials Science and Engineering (ICMSE 2022)
+IOP Conf. Series: Materials Science and Engineering 1248  (2022) 012107
+IOP Publishing
+doi:10.1088/1757-899X/1248/1/012107
+8
+𝛾𝑖(𝑡)=∆ 𝑚𝑖𝑛+𝜕∆𝑚𝑎𝑥
+∆𝑜𝑖(𝑡)+𝜕∆𝑚𝑎𝑥                             (3)                             
+0<𝛾𝑖(𝑡)≤1 
+Where, 𝜕=0.5 
+Equation (4) is used to calculate grey relational grade, 𝐺(𝑦𝑜,𝑦𝑖) 
+𝐺(𝑦𝑜,𝑦𝑖)=1
+𝑘∑𝛾𝑖
+𝑘
+𝑡=1
+(𝑡)                             (4) 
+Computational  values  of  grey  relational  analysis  are  indicated  in  table  5.  Highest  value  of  GRG 
+corresponds to experiment no 2, which indicates that highest value of tensile strength and shore hardness 
+can be achieved through parameters used in experiment 2.   
+Table 5: Grey relational analysis 
+Normalization Deviation sequence Grey Relational 
+Coefficient (GRC) 
+Exp. No. UTS Hardness UTS Hardness UTS Hardness Grade Rank 
+1 0.5036 0.1798 0.4964 0.8202 0.5018 0.3787 0.4403 8 
+2 1.0000 0.4561 0.0000 0.5439 1.0000 0.4790 0.7395 1 
+3 0.6418 0.0000 0.3582 1.0000 0.5826 0.3333 0.4580 7 
+4 0.4822 0.5534 0.5178 0.4466 0.4912 0.5282 0.5097 6 
+5 0.2965 0.7295 0.7035 0.2705 0.4155 0.6489 0.5322 5 
+6 0.5388 0.7295 0.4612 0.2705 0.5202 0.6489 0.5845 4 
+7 0.0000 0.4561 1.0000 0.5439 0.3333 0.4790 0.4062 9 
+8 0.3523 1.0000 0.6477 0.0000 0.4356 1.0000 0.7178 2 
+9 0.7968 0.7295 0.2032 0.2705 0.7111 0.6489 0.6800 3 
+ 
+4.2 Confirmation Experiment 
+A  confirmation  experiment  is  preformed  to  validate  the  results  obtained  through  analysis.  Process 
+parameters for confirmation experiment are considered as per experiment 2 which should give optimum 
+values  of  tensile  strength  and  shore  hardness.  Satisfactory  results  are  obtained  after  confirmation 
+experiment which are shown in Table 6. 
+Table 6 Results of confirmation experiments 
+  
+Tensile Strength Shore hardness Grey relational 
+grade 
+Trial 1 74.97 92   
+Trail 2 77.89 94   
+Trail 3 79.92 97   
+S/N ratio 37.79 39.49   
+Initial Process Parameters  A1B2C2D2 0.7395 
+Confirmation test A1B2C2D2 0.7414 
+ 
+4.3 Surface Morphology 
+In order to analyse and study micro-structure of FDM produced parts, microscopic evaluation was done 
+using an optical microscope. It is observed that by increasing the layer height, the irregularities between 
+two layers are to be increased that can be perceived in Fig. 6, 7 and 8.

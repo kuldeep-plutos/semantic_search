@@ -1,0 +1,23 @@
+About plutos ONE
+Named after the Greek God of Wealth, plutos ONE is the answer to the question: What if Banking was fun?
+
+We strive to make the Banking Experience a pleasure for every Indian
+Who We Are
+We are a diverse set of thinkers and doers committed to making Fintech accessible and useful for everyone.
+
+Our Vision
+To deliver to every Indian a world-class financial experience by offering a comprehensive suite of services via their Banks
+
+Our Mission
+To help Customers connect better with their Banks to get maximum value out of the relationship
+
+Digital Partners for Banks
+plutos ONE is India’s youngest TSP for the Bharat Bill Payment System. We also operate India’s largest Incentive Platform for Banks and Networks since 2010.
+
+As a licensed and empanelled BBPS TSP, plutos ONE offers a full suite of Products and Services for Banks. From Conversational AI Solutions for Bill Payments on WhatsApp, Web and more, to Incentives & Engagement on every Transaction, we build and operate cutting-edge Consumer Bill Payments Solutions. We also offer complete Biller solutions - from BBPS Onboarding to Settlements, Refunds and Support.
+
+We are also India’s largest Merchant-funded Offers Platform with 400+ Online Brands. We manage Card Activation & Offers Platforms for Banks, Networks and large Brands.
+
+Our Partners include NPCI (RuPay, UPI, BHIM UPI, BBPS), Visa, HDFC, BOBCard, Kotak Mahindra Bank, Bandhan Bank, Loylty Rewardz, IDFC First Bank, IDBI Bank.
+
+plutos ONE is PCI-DSS and ISO 27001:2013 certified. Our Application Stack runs on Meity-certified Data Centers by Google and are Preferred Partners for Google Cloud.
