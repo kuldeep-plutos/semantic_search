@@ -2,7 +2,8 @@ About plutos ONE
 Named after the Greek God of Wealth, plutos ONE is the answer to the question: What if Banking was fun?
 
 We strive to make the Banking Experience a pleasure for every Indian
-Who We Are
+
+Who We Are?
 We are a diverse set of thinkers and doers committed to making Fintech accessible and useful for everyone.
 
 Our Vision
@@ -21,3 +22,5 @@ We are also India’s largest Merchant-funded Offers Platform with 400+ Online B
 Our Partners include NPCI (RuPay, UPI, BHIM UPI, BBPS), Visa, HDFC, BOBCard, Kotak Mahindra Bank, Bandhan Bank, Loylty Rewardz, IDFC First Bank, IDBI Bank.
 
 plutos ONE is PCI-DSS and ISO 27001:2013 certified. Our Application Stack runs on Meity-certified Data Centers by Google and are Preferred Partners for Google Cloud.
+
+on plutos one user can get vouchers and offers for many brands and in many categories. these vouchers can be bought by using coins and to earn coins user can play polls or reffer their friends. for each refferal user gets 50 coins. user can win 100+ coins by polls.

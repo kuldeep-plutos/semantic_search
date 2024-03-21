@@ -1,0 +1,2 @@
+systemctl start ollama.service
+systemctl stop ollama.service

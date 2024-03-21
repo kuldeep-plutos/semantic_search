@@ -21,7 +21,7 @@ import chromadb
 
 # create client and a new collection
 db = chromadb.PersistentClient(path="./chroma_db")
-chroma_collection = db.get_or_create_collection("paulgragm")
+chroma_collection = db.get_or_create_collection("plutosONE")
 
 #Define embedding
 Settings.embed_model = HuggingFaceEmbedding()
